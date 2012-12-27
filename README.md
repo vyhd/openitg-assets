@@ -27,3 +27,7 @@ game-data-home: contains supporting data for OpenITG home releases (the 'home'
 patch-data: contains OpenITG-specific overrides for 'game-data-base', which are
 	common to all releases. Modify it as you like, but if you're building
 	a patch, use the scripts in openitg-utils; don't build directly here.
+
+win32-installer: NSIS installer files for the Windows installer.
+
+win32-program: pre-built DLLs to be supplied for Windows-based releases.
