@@ -17,10 +17,10 @@
 		/>
 
 		<BitmapText
-			Condition="PREFSMAN:GetPreference('SongEdits')"
+			Condition="OPENITG"
 			Font="_eurostile normal"
-			Text="Custom Songs Enabled"	
-			OnCommand="stoptweening;x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17-17;zoom,0.5;shadowlength,2;diffusealpha,0.0;zoomy,0;sleep,1;decelerate,0.3;zoomy,.5;diffusealpha,0.8"
+			Text="@string.format('Running OpenITG (build: %s)', GetProductVer())"
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17;zoom,0.5;shadowlength,2;diffusealpha,0.8"
 		/>
 	</children></ActorFrame>
 
@@ -56,8 +56,8 @@
 
 		<BitmapText
 			Font="_eurostile normal"
-			Text="@'&xa9; 2005-2009 Roxor Games, Inc. r' .. GetRevision()"
-			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17;zoom,0.5;shadowlength,2;diffusealpha,0.8"
+			Text="&xa9; 2005-2009 Roxor Games, Inc."
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17-17;zoom,0.5;shadowlength,2;diffusealpha,0.8"
 		/>
 
 		<Quad
@@ -101,8 +101,8 @@
 
 		<BitmapText
 			Font="_eurostile normal"
-			Text="@string.format('&xa9; 2005-2010 BoXoRRoXoRs (%s - r%d)', GetProductVer(), GetRevision())"
-			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17;zoom,0.5;shadowlength,2;diffusealpha,0.8"
+			Text="&xa9; 2005-2013 RoXoR Games, Inc. / BoXoRRoXoRs"
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-17-17;zoom,0.5;shadowlength,2;diffusealpha,0.8"
 		/>
 
 		<Quad
